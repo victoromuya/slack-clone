@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.mobile{
+  display: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,5 +39,16 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .app{
+    display: none;
+  }
+
+  .mobile{
+    display: grid;
+    place-items: center;
   }
 }
